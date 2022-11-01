@@ -3,14 +3,13 @@ This is a Project structure for developers to kick-start their journey of develo
 
 ## 🙇 Application Requirement
 
-1.  Ensure that Golang version 1.19.2 is installed or not
-* To check the version of Golang use this
-```bash   
-go version
-```
-* If not then visit https://golang.org/dl/ or https://www.digitalocean.com/community/tutorial_collections/how-to-install-go 
-and install Golang version 1.19.2
+1.  Install Go version - 1.19.2 via 
+* https://www.digitalocean.com/community/tutorial_collections/how-to-install-go OR https://golang.org/dl
 
+2. Once installed, Please check via below command
+```bash   
+    go version
+```
 
 ## 🛠️ Start the application locally
 1. Clone the repository
@@ -21,12 +20,12 @@ and install Golang version 1.19.2
 
 4. From go-program-structure directory, open a terminal and run
 ```bash 
-go run .
+    go run .
 ```
 
 5. If any error comes related to any dependency, then install dependency individually as like below command
 ```bash   
-   go get <URL of dependency>
+    go get <URL of dependency>
 ```
 
 ### Run Swagger
