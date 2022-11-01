@@ -3,13 +3,13 @@ This is a Project structure for developers to kick-start their journey of develo
 
 ## 🙇 Application Requirement
 
-1.  Ensure that Golang version 19.2 is installed or not
+1.  Ensure that Golang version 1.19.2 is installed or not
 * To check the version of Golang use this
 ```bash   
 go version
 ```
 * If not then visit https://golang.org/dl/ or https://www.digitalocean.com/community/tutorial_collections/how-to-install-go 
-and install Golang version 19.2
+and install Golang version 1.19.2
 
 
 ## 🛠️ Start the application locally
