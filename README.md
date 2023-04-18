@@ -29,6 +29,6 @@ This is a Project structure for developers to kick-start their journey of develo
 ```
 
 ##  Run Swagger
-- Swagger doc URL - http://xxxxxxxxxx:PORT/docs/index.html
+- Swagger doc URL - http://xxxxxxxxxx:PORT/vVERSION/SERVICENAME/docs
 
 🌟 You are all set!

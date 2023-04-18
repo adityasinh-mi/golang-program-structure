@@ -48,8 +48,8 @@ func NewHandler(config *service.Config) *gin.Engine {
 			Title:       "Docs",
 			Description: "Documentation",
 			SpecFile:    "./docs/swagger.json",
-			SpecPath:    fmt.Sprintf("/v2/%s/docs/openapi.json", config.ServiceName),
-			DocsPath:    fmt.Sprintf("/v2/%s/docs", config.ServiceName),
+			SpecPath:    fmt.Sprintf("/v%s/%s/docs/openapi.json", config.Version, config.ServiceName),
+			DocsPath:    fmt.Sprintf("/v%s/%s/docs", config.Version, config.ServiceName),
 		}
 		h.Use(ginredoc.New(docs))
 	} else {

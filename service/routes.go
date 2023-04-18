@@ -14,13 +14,11 @@ import (
 func AddRoutes(r *gin.Engine, config *Config) {
 	requestAuth := middleware.NewRequestAuth(config.Logger)
 
-	userGroup := r.Group("/v1")
+	userGroup := r.Group(fmt.Sprintf("/v%s", config.Version))
 	userGroup.Use(requestAuth.Middleware)
-	userGroup.GET("/user", func(c *gin.Context) {
-		c.JSON(200, "Sucess1")
-	})
+	userGroup.GET("/user", config.GetUser)
 	r.GET("/users", func(c *gin.Context) {
-		c.JSON(200, "Sucess2")
+		c.JSON(200, "Success")
 	})
 }
 
